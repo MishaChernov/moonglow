@@ -1,0 +1,19 @@
+.features {
+  display: flex;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: flex-start;
+}
+
+.features__item {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.features__title {
+  padding: 0 50px;
+  text-align: center;
+}
