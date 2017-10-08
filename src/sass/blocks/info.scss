@@ -1,0 +1,27 @@
+.info {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding-top: 80px;
+  height: 451px;
+  box-sizing: border-box;
+}
+
+.info__title {
+  font-size: 35px;
+  line-height: 45px;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 1);
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (min-width: 510px) {
+  .info {
+    background-position: 94%;
+  }
+  .info__title {
+    display: none;
+  }
+}

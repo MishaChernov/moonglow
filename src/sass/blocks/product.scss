@@ -1,0 +1,118 @@
+.product {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.product__title {
+  padding: 0 30px;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.product__img {
+  max-width: 322px;
+}
+
+.product__wrapper {
+  width: auto;
+  margin-left: 50px;
+}
+
+.product__item {
+  position: relative;
+  margin: 15px 0;
+  text-transform: lowercase;
+  color: $primary-list-color;
+  font-size: 24px;
+
+  &::before {
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    @include set-icon(url("../img/arrows.svg"), 20px, 10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.product__subtitle {
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.product__price {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $primary-font-family;
+  font-size: 40px;
+  font-weight: 700;
+
+  &--through {
+    text-decoration: line-through;
+    font-size: 25px;
+    font-weight: 400;
+    color: $primary-price-color;
+  }
+}
+
+.product__sales {
+  margin-left: -50px;
+}
+
+.product__form {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.product__input {
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-transform: lowercase;
+  color: #000000;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 1),
+              0 3px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+
+  @include hover-effects;
+}
+
+.product__btn {
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  background: linear-gradient(to bottom, #ffd801 0%,#ff7e00 100%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 1),
+              0 3px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  @include hover-effects;
+}
+
+@media (min-width: 799px) {
+  .product__sales {
+    margin-left: 0px;
+  }
+}

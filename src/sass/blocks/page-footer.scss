@@ -1,13 +1,20 @@
 .page-footer {
-  border-top: 1px solid #ececec;
-  margin-top: 70px;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
+  background-color: $primary-bg-color4;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.page-footer__copyright {
-  font-size: 13px;
-  color: $secondary-font-color;
-  flex: 1;
+.page-footer__text {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.page-footer__phone,
+.page-footer__address {
+  color: #000000;
+  text-decoration: none;
+  @include hover-effects;
+  font-weight: 400;
 }

@@ -1,0 +1,33 @@
+.page-main--features {
+  text-align: center;
+}
+
+.page-main__phone {
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 36px;
+  width: 100%;
+  display: block;
+  color: #000000;
+  @include hover-effects;
+  margin-bottom: 40px;
+}
+
+.page-main__link {
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  background: linear-gradient(to bottom, #ffd801 0%,#ff7e00 100%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 1),
+              0 3px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  @include hover-effects;
+}

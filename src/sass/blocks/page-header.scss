@@ -1,5 +1,30 @@
 .page-header {
-  position: relative;
+  background-color: $primary-bg-color4;
+  width: auto;
   height: auto;
-  padding: 15px 0;
+  padding: 10px 0;
+
+  &--features {
+    background-color: $primary-bg-color2;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+.page-header__title--features {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.page-header__text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.page-header__title {
+  font-size: 18px;
+  margin: 0;
 }
