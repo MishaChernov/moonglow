@@ -60,11 +60,11 @@ gulp.task('styles', function() {
 gulp.task('min-js', function() {
   return multipipe(
     gulp.src('src/assets/js/*.js'),
+      gulp.dest('build/js'),
+      uglify(),
+      rename('main-js-min.js'),
+      debug({title: 'min-js'}),
       gulp.dest('build/js')
-      // uglify(),
-      // rename('main-js-min.js'),
-      // debug({title: 'min-js'}),
-      // gulp.dest('build/js')
   );
 });
 
